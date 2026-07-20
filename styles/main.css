@@ -1,0 +1,136 @@
+/* ============================================================
+   main.css — shared styles for the French resources repo
+   Palette: ink on warm paper; verb endings in red (the signature).
+   Print target: A4 (European). See @page rule at the bottom.
+   ============================================================ */
+
+:root{
+  --paper:#FBFAF6;
+  --ink:#21304D;
+  --ink-soft:#55617A;
+  --ending:#B23A2E;      /* terminaisons / endings */
+  --rule:#E4DFD3;
+  --rule-soft:#F0ECE1;
+  --g1:#2E5E8C;          /* groupe 1 accent (blue)  */
+  --g2:#3E7D5A;          /* groupe 2 accent (green) */
+  --g3:#B07A29;          /* groupe 3 accent (amber) */
+  --warn-bg:#FBF3E6;
+  --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:"SF Mono",ui-monospace,"Cascadia Code",Menlo,Consolas,monospace;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);line-height:1.55;font-size:16px;
+}
+.wrap{max-width:900px;margin:0 auto;padding:48px 28px 96px}
+
+/* ---- masthead ---- */
+header.mast{border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:8px}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 10px}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(28px,6vw,44px);line-height:1.03;margin:0;letter-spacing:-.01em}
+h1 .sub{display:block;font-style:italic;font-weight:400;font-size:clamp(15px,3.2vw,21px);color:var(--ink-soft);margin-top:8px;letter-spacing:0}
+
+/* ---- legend ---- */
+.legend{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin:22px 0 40px;font-size:13.5px;color:var(--ink-soft)}
+.legend b{color:var(--ink)}
+.swatch{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:6px}
+.stem-demo{font-family:var(--mono)}
+.stem-demo .e{color:var(--ending);font-weight:700}
+
+/* ---- table of contents ---- */
+.toc{font-family:var(--mono);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 40px;color:var(--ink-soft)}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--ink-soft)}
+
+/* ---- sections ---- */
+section{margin:0 0 44px;scroll-margin-top:20px}
+h2{font-family:var(--serif);font-size:25px;margin:0 0 4px;font-weight:700;letter-spacing:-.01em}
+h2 .num{font-family:var(--mono);font-size:13px;color:var(--ink-soft);font-weight:400;letter-spacing:.1em}
+.lede{color:var(--ink-soft);margin:2px 0 18px;max-width:64ch}
+h3{font-family:var(--sans);font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin:26px 0 10px;font-weight:700}
+
+/* group band header */
+.gband{display:flex;align-items:baseline;gap:14px;border-top:3px solid;padding-top:14px;margin-top:8px}
+.gband .tag{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:20px;color:#fff}
+.g1 .gband{border-color:var(--g1)} .g1 .tag{background:var(--g1)}
+.g2 .gband{border-color:var(--g2)} .g2 .tag{background:var(--g2)}
+.g3 .gband{border-color:var(--g3)} .g3 .tag{background:var(--g3)}
+
+/* ---- conjugation tables ---- */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px 20px;margin:6px 0}
+table.conj{width:100%;border-collapse:collapse;font-size:14.5px}
+table.conj caption{text-align:left;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.03em;color:var(--ink);padding:0 0 6px}
+table.conj caption .en{color:var(--ink-soft);font-weight:400;font-style:italic}
+table.conj td{padding:2.5px 0;border:0;vertical-align:baseline}
+table.conj td.pron{color:var(--ink-soft);font-family:var(--mono);font-size:12.5px;width:82px;white-space:nowrap;padding-right:8px}
+table.conj td.form{font-family:var(--mono);font-size:14px;color:var(--ink)}
+.e{color:var(--ending);font-weight:700}                 /* ending / terminaison */
+.stemchg{color:var(--g3);font-weight:700}               /* irregular stem shift */
+
+/* ---- plain reference tables ---- */
+table.ref{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+table.ref th,table.ref td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule)}
+table.ref th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);border-bottom:2px solid var(--rule);font-weight:700}
+table.ref td:first-child{font-family:var(--mono);color:var(--ink);white-space:nowrap}
+table.ref tr:last-child td{border-bottom:0}
+
+/* ---- callouts ---- */
+.note{background:var(--warn-bg);border-left:3px solid var(--g3);padding:14px 16px;border-radius:0 6px 6px 0;margin:16px 0;font-size:14px}
+.note b{color:var(--g3)}
+.key{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:16px 18px;margin:14px 0}
+.key h3{margin-top:0}
+
+code{font-family:var(--mono);font-size:.9em;background:var(--rule-soft);padding:1px 5px;border-radius:4px}
+.ex{font-family:var(--mono);font-size:13.5px;color:var(--ink-soft)}
+.ex b{color:var(--ink);font-weight:600}
+.fr-ex{font-style:italic}
+.fr-ex b{font-style:normal;color:var(--ending);font-weight:700}
+
+hr{border:0;border-top:1px solid var(--rule);margin:40px 0}
+footer{color:var(--ink-soft);font-size:13px;border-top:2px solid var(--ink);padding-top:16px;margin-top:8px}
+
+/* ============================================================
+   Landing page (index.html) cards
+   ============================================================ */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:8px 0 36px}
+a.card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--rule);border-radius:10px;padding:20px 20px 18px;transition:border-color .15s,transform .15s}
+a.card:hover{border-color:var(--ink);transform:translateY(-2px)}
+a.card .lvl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--g2);padding:2px 8px;border-radius:20px}
+a.card h3{color:var(--ink);text-transform:none;letter-spacing:0;font-family:var(--serif);font-size:19px;margin:14px 0 6px;font-weight:700}
+a.card p{margin:0;font-size:13.5px;color:var(--ink-soft)}
+.soon{opacity:.55}
+.soon .lvl{background:var(--ink-soft)}
+
+/* ============================================================
+   Drills / exercices (fill-in, with a hidden answer key)
+   ============================================================ */
+.drill{background:#fff;border:1px solid var(--rule);border-left:3px solid var(--g2);border-radius:0 8px 8px 0;padding:16px 18px 14px;margin:18px 0}
+.drill h3{margin-top:0;color:var(--g2)}
+.drill ol{margin:6px 0 0;padding-left:22px}
+.drill li{margin:9px 0;line-height:1.9}
+.drill .hint{color:var(--ink-soft);font-style:italic;font-size:.9em}
+.blank{display:inline-block;min-width:92px;border-bottom:1.6px solid var(--ink-soft);margin:0 3px;height:1.05em;vertical-align:-2px}
+details.answers{margin-top:14px;border-top:1px dashed var(--rule);padding-top:10px}
+details.answers summary{cursor:pointer;font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--g2);font-weight:700}
+details.answers summary::marker{color:var(--g2)}
+details.answers ol{margin-top:8px}
+details.answers li{font-family:var(--mono);font-size:13.5px;color:var(--ending);line-height:1.5}
+details.answers li span.q{color:var(--ink-soft)}
+
+/* ============================================================
+   Print — European A4
+   ============================================================ */
+@page{size:A4;margin:16mm}
+@media print{
+  :root{--paper:#fff}
+  body{font-size:11.5px;background:#fff}
+  .wrap{padding:0;max-width:none}
+  .toc,.print-hide{display:none}
+  section{break-inside:avoid}
+  .grid{grid-template-columns:1fr 1fr}
+  a.card{break-inside:avoid}
+  a{color:var(--ink);text-decoration:none}
+}
