@@ -16,10 +16,6 @@ french-resources/
 └── README.md
 ```
 
-Each sheet ends with a short **Exercices** section: fill-in-the-blank drills with
-an answer key hidden behind a `<details>` toggle (open it before printing if you
-want the key on paper).
-
 All pages link the same `styles/main.css`, so the look stays consistent and you
 change it in one place. Colour convention: **radical** in ink, *terminaison* in red.
 
@@ -33,25 +29,6 @@ cd french-resources
 python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
-
-## Publish on GitHub Pages
-
-```bash
-cd french-resources
-git init
-git add .
-git commit -m "Initial French resources site"
-git branch -M main
-git remote add origin git@github.com:<you>/french-resources.git
-git push -u origin main
-```
-
-Then on GitHub: **Settings → Pages → Build and deployment**
-- Source: **Deploy from a branch**
-- Branch: **main** / **/ (root)** → Save
-
-Your site appears at `https://<you>.github.io/french-resources/` within a minute
-or two. No Jekyll config or build step needed — these are static files.
 
 ## Add a new resource
 
