@@ -3,7 +3,7 @@
 ## What this repo is
 
 A small static site of French-learning reference sheets (plain HTML, no build step), published with GitHub Pages from the root of `main`.
-Live site: https://gregcaporaso.github.io/french-resources/
+Live site: <https://gregcaporaso.github.io/french-resources/>
 
 ## Content conventions
 
@@ -18,6 +18,7 @@ All pages link the single shared stylesheet `styles/main.css` by relative path â
 Reusable components in `main.css`: `table.conj` (conjugation grids), `table.ref` (plain tables), `.note` / `.key` (callouts), `.grid` (responsive columns), `.e` (ending highlight).
 New resources: create the HTML page, then add a card to `index.html` by copying the commented `TEMPLATE` block there.
 Preview locally with `python3 -m http.server` (relative CSS paths break under `file://`).
+DeepL cannot be embedded in an iframe (its CSP sends `frame-ancestors 'self' *.deepl.com`); instead, every page footer has a launcher form (logic in `scripts/deepl.js`) that opens `deepl.com/translator#src/tgt/text` prefilled in a new tab.
 
 ## Workflow
 

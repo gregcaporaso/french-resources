@@ -61,7 +61,17 @@
 <footer>
   Généré avec l'aide de Claude · hébergé sur GitHub&nbsp;Pages.
   <span class="print-hide">Pour imprimer une fiche : ouvrir la page puis Ctrl/Cmd&nbsp;+&nbsp;P (format A4).</span>
+  <form class="deepl print-hide" id="deepl-form">
+    <span class="lvl">DeepL</span>
+    <select id="deepl-dir" aria-label="Direction de traduction">
+      <option value="fr/en">FR → EN</option>
+      <option value="en/fr">EN → FR</option>
+    </select>
+    <input type="text" id="deepl-text" placeholder="mot ou phrase à traduire…" aria-label="Texte à traduire">
+    <button type="submit">Traduire ↗</button>
+  </form>
 </footer>
+<script src="scripts/deepl.js"></script>
 
 </div>
 </body>

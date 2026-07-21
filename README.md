@@ -12,6 +12,8 @@ french-resources/
 ├── conjugaison-a2.html    # A2 conjugation reference
 ├── styles/
 │   └── main.css           # shared styles + A4 print rules (edit once, applies everywhere)
+├── scripts/
+│   └── deepl.js           # DeepL launcher in each page footer (opens deepl.com prefilled)
 ├── .gitignore
 └── README.md
 ```
@@ -39,9 +41,11 @@ python3 -m http.server 8000
 2. Reuse the components already defined in `main.css`: `table.conj` (conjugation
    grids), `table.ref` (plain tables), `.note` / `.key` (callouts), `.grid`
    (responsive columns), `.e` (ending highlight).
-3. Add a card to `index.html` — copy the commented `TEMPLATE` block already in
+3. To include the DeepL launcher, copy the footer `<form class="deepl">` block
+   and the `<script src="scripts/deepl.js">` tag from an existing page.
+4. Add a card to `index.html` — copy the commented `TEMPLATE` block already in
    that file and edit `href`, level, title, and description.
-4. Commit and push; Pages redeploys automatically.
+5. Commit and push; Pages redeploys automatically.
 
 ## Printing
 

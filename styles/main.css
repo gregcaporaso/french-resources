@@ -104,6 +104,14 @@ a.card p{margin:0;font-size:13.5px;color:var(--ink-soft)}
 .soon{opacity:.55}
 .soon .lvl{background:var(--ink-soft)}
 
+/* DeepL launcher (page footers) — opens deepl.com in a new tab with the text prefilled */
+.deepl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:#fff;border:1px solid var(--rule);border-radius:10px;padding:14px 16px;margin:18px 0 0}
+.deepl .lvl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--g1);padding:2px 8px;border-radius:20px}
+.deepl select,.deepl input,.deepl button{font-family:var(--sans);font-size:14px;padding:7px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink)}
+.deepl input{flex:1;min-width:160px}
+.deepl button{cursor:pointer;background:var(--ink);color:#fff;border-color:var(--ink)}
+.deepl button:hover{background:var(--g1);border-color:var(--g1)}
+
 /* ============================================================
    Drills / exercices (fill-in, with a hidden answer key)
    ============================================================ */
