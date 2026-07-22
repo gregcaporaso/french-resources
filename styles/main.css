@@ -68,6 +68,7 @@ table.conj td{padding:2.5px 0;border:0;vertical-align:baseline}
 table.conj td.pron{color:var(--ink-soft);font-family:var(--mono);font-size:12.5px;width:82px;white-space:nowrap;padding-right:8px}
 table.conj td.form{font-family:var(--mono);font-size:14px;color:var(--ink)}
 .e{color:var(--ending);font-weight:700}                 /* ending / terminaison */
+.en{font-family:var(--sans);font-style:italic;font-weight:400;color:var(--ink-soft);font-size:.95em} /* English gloss beside a French word */
 .stemchg{color:var(--g3);font-weight:700}               /* irregular stem shift */
 
 /* ---- plain reference tables ---- */
