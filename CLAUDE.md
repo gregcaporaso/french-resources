@@ -10,6 +10,7 @@ Live site: <https://gregcaporaso.github.io/french-resources/>
 Pages are reference sheets only — do not add exercises, drills, or answer keys (removed by request on 2026-07-21).
 Page content is in French with English glosses; `lang="fr"` on every page.
 Colour convention throughout: verb **radical** in ink, **terminaison** in red (the `.e` class / `--ending` CSS variable).
+Typography is intentional and is an exception to the global monospace-body default: serif (`--serif`) for headings, sans (`--sans`) for body text, mono (`--mono`) for accents only.
 Every page must be A4 print-friendly; print rules live in the shared stylesheet.
 
 ## Structure conventions
