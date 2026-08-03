@@ -12,7 +12,8 @@ french-resources/
 ├── styles/
 │   └── main.css           # shared styles + A4 print rules (edit once, applies everywhere)
 ├── scripts/
-│   └── deepl.js           # DeepL launcher in each page footer (opens deepl.com prefilled)
+│   ├── deepl.js           # injects the DeepL launcher into each page footer (opens deepl.com prefilled)
+│   └── nav.js             # injects the cross-page nav at the top of each sheet
 ├── .gitignore
 └── README.md
 ```
@@ -39,9 +40,10 @@ python3 -m http.server 8000
    ```
 
 2. Reuse the components already defined in `main.css`: `table.conj` (conjugation grids), `table.ref` (plain tables), `.note` / `.key` (callouts), `.grid` (responsive columns), `.e` (ending highlight).
-3. To include the DeepL launcher, copy the footer `<form class="deepl">` block and the `<script src="scripts/deepl.js">` tag from an existing page.
-4. Add a card to `index.html` — copy the commented `TEMPLATE` block already in that file and edit `href`, level, title, and description.
-5. Commit and push; Pages redeploys automatically.
+3. Copy the two `<script>` tags (`scripts/nav.js`, `scripts/deepl.js`) from the end of an existing page — they inject the cross-page nav and the footer DeepL launcher.
+4. Add the page to the `PAGES` list in `scripts/nav.js` so it shows up in the nav.
+5. Add a card to `index.html` — copy the commented `TEMPLATE` block already in that file and edit `href`, level, title, and description.
+6. Commit and push; Pages redeploys automatically.
 
 ## Printing
 

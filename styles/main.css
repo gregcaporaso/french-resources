@@ -45,6 +45,12 @@ h1 .sub{display:block;font-style:italic;font-weight:400;font-size:clamp(15px,3.2
 .toc{font-family:var(--mono);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 40px;color:var(--ink-soft)}
 .toc a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--ink-soft)}
 
+/* ---- site nav (injected by scripts/nav.js, above the masthead) ---- */
+.sitenav{font-family:var(--mono);font-size:12.5px;display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 26px;color:var(--ink-soft)}
+.sitenav a{color:var(--ink-soft);text-decoration:none;border-bottom:1px dotted var(--ink-soft)}
+.sitenav a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.sitenav [aria-current]{color:var(--ink);font-weight:700}
+
 /* ---- sections ---- */
 section{margin:0 0 44px;scroll-margin-top:20px}
 h2{font-family:var(--serif);font-size:25px;margin:0 0 4px;font-weight:700;letter-spacing:-.01em}
@@ -97,11 +103,11 @@ footer{color:var(--ink-soft);font-size:13px;border-top:2px solid var(--ink);padd
    Landing page (index.html) cards
    ============================================================ */
 .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:8px 0 36px}
-a.card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--rule);border-radius:10px;padding:20px 20px 18px;transition:border-color .15s,transform .15s}
+.card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--rule);border-radius:10px;padding:20px 20px 18px;transition:border-color .15s,transform .15s}
 a.card:hover{border-color:var(--ink);transform:translateY(-2px)}
-a.card .lvl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--g2);padding:2px 8px;border-radius:20px}
-a.card h3{color:var(--ink);text-transform:none;letter-spacing:0;font-family:var(--serif);font-size:19px;margin:14px 0 6px;font-weight:700}
-a.card p{margin:0;font-size:13.5px;color:var(--ink-soft)}
+.card .lvl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--g2);padding:2px 8px;border-radius:20px}
+.card h3{color:var(--ink);text-transform:none;letter-spacing:0;font-family:var(--serif);font-size:19px;margin:14px 0 6px;font-weight:700}
+.card p{margin:0;font-size:13.5px;color:var(--ink-soft)}
 .soon{opacity:.55}
 .soon .lvl{background:var(--ink-soft)}
 
@@ -114,22 +120,6 @@ a.card p{margin:0;font-size:13.5px;color:var(--ink-soft)}
 .deepl button:hover{background:var(--g1);border-color:var(--g1)}
 
 /* ============================================================
-   Drills / exercices (fill-in, with a hidden answer key)
-   ============================================================ */
-.drill{background:#fff;border:1px solid var(--rule);border-left:3px solid var(--g2);border-radius:0 8px 8px 0;padding:16px 18px 14px;margin:18px 0}
-.drill h3{margin-top:0;color:var(--g2)}
-.drill ol{margin:6px 0 0;padding-left:22px}
-.drill li{margin:9px 0;line-height:1.9}
-.drill .hint{color:var(--ink-soft);font-style:italic;font-size:.9em}
-.blank{display:inline-block;min-width:92px;border-bottom:1.6px solid var(--ink-soft);margin:0 3px;height:1.05em;vertical-align:-2px}
-details.answers{margin-top:14px;border-top:1px dashed var(--rule);padding-top:10px}
-details.answers summary{cursor:pointer;font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--g2);font-weight:700}
-details.answers summary::marker{color:var(--g2)}
-details.answers ol{margin-top:8px}
-details.answers li{font-family:var(--mono);font-size:13.5px;color:var(--ending);line-height:1.5}
-details.answers li span.q{color:var(--ink-soft)}
-
-/* ============================================================
    Print — European A4
    ============================================================ */
 @page{size:A4;margin:16mm}
@@ -140,6 +130,6 @@ details.answers li span.q{color:var(--ink-soft)}
   .toc,.print-hide{display:none}
   section{break-inside:avoid}
   .grid{grid-template-columns:1fr 1fr}
-  a.card{break-inside:avoid}
+  .card{break-inside:avoid}
   a{color:var(--ink);text-decoration:none}
 }
