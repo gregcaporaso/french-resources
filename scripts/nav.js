@@ -8,7 +8,8 @@
     ['verbes-a2.html', 'Verbes'],
     ['noms-a2.html', 'Noms'],
     ['phrases-a2.html', 'Phrases'],
-    ['cod-a2.html', 'COD']
+    ['cod-a2.html', 'COD'],
+    ['gerondif-a2.html', 'Gérondif']
   ];
   var here = location.pathname.split('/').pop() || 'index.html';
   var nav = document.createElement('nav');
