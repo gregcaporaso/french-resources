@@ -3,6 +3,7 @@
 (function () {
   var PAGES = [
     ['index.html', 'Accueil'],
+    ['alphabet-a1.html', 'Alphabet'],
     ['fondations-a1-a2.html', 'Fondations'],
     ['conjugaison-a2.html', 'Conjugaison'],
     ['verbes-a2.html', 'Verbes'],

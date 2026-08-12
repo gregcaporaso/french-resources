@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'alphabet — A1</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <p class="kicker">Aide-mémoire · A1</p>
+  <h1>L'alphabet
+    <span class="sub">Les 26 lettres · les accents · épeler à voix haute</span>
+  </h1>
+</header>
+
+<p class="lede" style="margin:22px 0 8px;max-width:62ch">
+  You need the alphabet every time you spell your name, an address, or an email
+  aloud — and French letter names are just different enough from English to trip
+  you up. Listen first, then read along with the tables below.
+</p>
+
+<nav class="toc">
+  <a href="#ecouter">1 · Écouter</a>
+  <a href="#lettres">2 · Les 26 lettres</a>
+  <a href="#accents">3 · Accents &amp; signes</a>
+  <a href="#epeler">4 · Épeler en pratique</a>
+</nav>
+
+<!-- ===================== ÉCOUTER ===================== -->
+<section id="ecouter">
+  <h2><span class="num">1 · </span>Écouter l'alphabet</h2>
+  <p class="lede">A native speaker reciting the 26 letters (26&nbsp;seconds). Turn on the loop and let it run while you read along below.</p>
+
+  <div class="key print-hide">
+    <h3>▶ L'alphabet récité</h3>
+    <p style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0">
+      <audio id="alphabet-audio" controls preload="auto" style="flex:1;min-width:220px">
+        <source src="audio/alphabet-fr.mp3" type="audio/mpeg">
+        <source src="audio/alphabet-fr.ogg" type="audio/ogg">
+        Votre navigateur ne lit pas l'audio HTML5.
+      </audio>
+      <button id="loop-toggle" type="button" aria-pressed="false"
+        style="font-family:var(--sans);font-size:14px;padding:7px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink);cursor:pointer">
+        🔁 Boucle : désactivée
+      </button>
+    </p>
+    <p class="ex" style="margin:10px 0 0">
+      Audio : <a href="https://commons.wikimedia.org/wiki/File:French_Grammar_-_The_French_Alphabet.ogg">« The French Alphabet »</a>,
+      French Wikibook (Wikimedia Commons), licence
+      <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC&nbsp;BY-SA&nbsp;3.0</a>.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== LES 26 LETTRES ===================== -->
+<section id="lettres">
+  <h2><span class="num">2 · </span>Les 26 lettres</h2>
+  <p class="lede">The French letter <em>names</em>, with a rough English sound-alike for each. The letters themselves are the same as in English — only the names change.</p>
+
+  <div class="grid">
+    <table class="ref">
+      <thead><tr><th>Lettre</th><th>Nom</th><th>Repère</th></tr></thead>
+      <tbody>
+        <tr><td>A a</td><td>a</td><td><span class="en">"ah"</span></td></tr>
+        <tr><td>B b</td><td>bé</td><td><span class="en">"bay"</span></td></tr>
+        <tr><td>C c</td><td>cé</td><td><span class="en">"say"</span></td></tr>
+        <tr><td>D d</td><td>dé</td><td><span class="en">"day"</span></td></tr>
+        <tr><td>E e</td><td>e</td><td><span class="en">"uh"</span></td></tr>
+        <tr><td>F f</td><td>effe</td><td><span class="en">"eff"</span></td></tr>
+        <tr><td>G g</td><td>gé</td><td><span class="en">"zhay"</span></td></tr>
+        <tr><td>H h</td><td>ache</td><td><span class="en">"ash"</span></td></tr>
+        <tr><td>I i</td><td>i</td><td><span class="en">"ee"</span></td></tr>
+        <tr><td>J j</td><td>ji</td><td><span class="en">"zhee"</span></td></tr>
+        <tr><td>K k</td><td>ka</td><td><span class="en">"kah"</span></td></tr>
+        <tr><td>L l</td><td>elle</td><td><span class="en">"ell"</span></td></tr>
+        <tr><td>M m</td><td>emme</td><td><span class="en">"em"</span></td></tr>
+      </tbody>
+    </table>
+    <table class="ref">
+      <thead><tr><th>Lettre</th><th>Nom</th><th>Repère</th></tr></thead>
+      <tbody>
+        <tr><td>N n</td><td>enne</td><td><span class="en">"en"</span></td></tr>
+        <tr><td>O o</td><td>o</td><td><span class="en">"oh"</span></td></tr>
+        <tr><td>P p</td><td>pé</td><td><span class="en">"pay"</span></td></tr>
+        <tr><td>Q q</td><td>qu</td><td><span class="en">"kü" (rounded lips)</span></td></tr>
+        <tr><td>R r</td><td>erre</td><td><span class="en">"air" (in the throat)</span></td></tr>
+        <tr><td>S s</td><td>esse</td><td><span class="en">"ess"</span></td></tr>
+        <tr><td>T t</td><td>té</td><td><span class="en">"tay"</span></td></tr>
+        <tr><td>U u</td><td>u</td><td><span class="en">"ü" — say "ee", round your lips</span></td></tr>
+        <tr><td>V v</td><td>vé</td><td><span class="en">"vay"</span></td></tr>
+        <tr><td>W w</td><td>double vé</td><td><span class="en">"doo-bluh-vay"</span></td></tr>
+        <tr><td>X x</td><td>ixe</td><td><span class="en">"eeks"</span></td></tr>
+        <tr><td>Y y</td><td>i grec</td><td><span class="en">"ee grek" (the Greek i)</span></td></tr>
+        <tr><td>Z z</td><td>zède</td><td><span class="en">"zed"</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <b>Les pièges pour anglophones.</b>
+    French <em>g</em> sounds like English "j" (jay), and French <em>j</em> sounds like English "g" (gee) — they swap.
+    French <em>e</em> ("uh") vs <em>i</em> ("ee") vs <em>a</em> ("ah") also collide with the English names.
+    And <em>u</em> is its own sound — round your lips tightly while saying "ee".
+  </div>
+</section>
+
+<!-- ===================== ACCENTS & SIGNES ===================== -->
+<section id="accents">
+  <h2><span class="num">3 · </span>Accents &amp; signes</h2>
+  <p class="lede">When spelling aloud you name the letter, then the accent: <em>é</em> → « e accent aigu ».</p>
+
+  <table class="ref">
+    <thead><tr><th>Signe</th><th>Nom</th><th>Exemple</th></tr></thead>
+    <tbody>
+      <tr><td>é</td><td>accent aigu <span class="en">acute accent</span></td><td class="ex">café → c-a-f-e accent aigu</td></tr>
+      <tr><td>è à ù</td><td>accent grave <span class="en">grave accent</span></td><td class="ex">père, à, où</td></tr>
+      <tr><td>ê â î ô û</td><td>accent circonflexe <span class="en">circumflex</span></td><td class="ex">forêt, hôtel</td></tr>
+      <tr><td>ë ï ü</td><td>tréma <span class="en">diaeresis — vowels said separately</span></td><td class="ex">Noël, naïf</td></tr>
+      <tr><td>ç</td><td>cédille <span class="en">cedilla — c sounds like s</span></td><td class="ex">français, ça</td></tr>
+      <tr><td>œ</td><td>e dans l'o <span class="en">"e in the o"</span></td><td class="ex">sœur, œuf</td></tr>
+      <tr><td>'</td><td>apostrophe</td><td class="ex">l'ami → l apostrophe a-m-i</td></tr>
+      <tr><td>-</td><td>trait d'union <span class="en">hyphen</span></td><td class="ex">Jean-Luc</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ===================== ÉPELER EN PRATIQUE ===================== -->
+<section id="epeler">
+  <h2><span class="num">4 · </span>Épeler en pratique</h2>
+  <p class="lede">The phrases you'll actually exchange when spelling something out — plus the extra symbols you need for an email address.</p>
+
+  <div class="key">
+    <h3>Demander &amp; répondre</h3>
+    <table class="ref">
+      <tbody>
+        <tr><td>Comment ça s'écrit ?</td><td><span class="en">How is that spelled?</span></td></tr>
+        <tr><td>Vous pouvez épeler, s'il vous plaît ?</td><td><span class="en">Can you spell it, please?</span></td></tr>
+        <tr><td>Ça s'écrit…</td><td><span class="en">It's spelled…</span></td></tr>
+        <tr><td>majuscule / minuscule</td><td><span class="en">uppercase / lowercase</span></td></tr>
+        <tr><td>deux l, deux t…</td><td><span class="en">double l, double t… — appeler → a-p-p-e-l-e-r, « deux p »</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="key">
+    <h3>Pour une adresse email</h3>
+    <table class="ref">
+      <tbody>
+        <tr><td>@</td><td>arobase <span class="en">at sign</span></td></tr>
+        <tr><td>.</td><td>point <span class="en">dot</span></td></tr>
+        <tr><td>-</td><td>tiret <span class="en">dash</span></td></tr>
+        <tr><td>_</td><td>tiret bas <span class="en">underscore</span></td></tr>
+      </tbody>
+    </table>
+    <p class="ex" style="margin:8px 0 0">« Mon adresse, c'est marie tiret dupont arobase gmail point com. »</p>
+  </div>
+</section>
+
+<footer>
+  Aide-mémoire alphabet A1 · enregistrement en boucle pour l'entraînement.
+  <br>Ensuite, passe à la fiche <a href="fondations-a1-a2.html"><em>Fondations A1 → A2</em></a>.
+</footer>
+<script src="scripts/nav.js"></script>
+<script src="scripts/deepl.js"></script>
+<script>
+// Loop toggle for the alphabet recording (page-specific, so it lives here
+// rather than in scripts/, which holds only shared page furniture).
+(function () {
+  var audio = document.getElementById('alphabet-audio');
+  var btn = document.getElementById('loop-toggle');
+  btn.addEventListener('click', function () {
+    audio.loop = !audio.loop;
+    btn.textContent = audio.loop ? '🔁 Boucle : activée' : '🔁 Boucle : désactivée';
+    btn.setAttribute('aria-pressed', String(audio.loop));
+    btn.style.background = audio.loop ? 'var(--ink)' : 'var(--paper)';
+    btn.style.color = audio.loop ? '#fff' : 'var(--ink)';
+    if (audio.loop && audio.paused) audio.play();
+  });
+})();
+</script>
+
+</div>
+</body>
+</html>
