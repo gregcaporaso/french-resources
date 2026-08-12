@@ -9,7 +9,8 @@
     ['noms-a2.html', 'Noms'],
     ['phrases-a2.html', 'Phrases'],
     ['cod-a2.html', 'COD'],
-    ['gerondif-a2.html', 'Gérondif']
+    ['gerondif-a2.html', 'Gérondif'],
+    ['delf-a2-lacunes.html', 'Feuille de route']
   ];
   var here = location.pathname.split('/').pop() || 'index.html';
   var nav = document.createElement('nav');
