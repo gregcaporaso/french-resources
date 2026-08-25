@@ -15,7 +15,7 @@
   ];
   var here = location.pathname.split('/').pop() || 'index.html';
   var nav = document.createElement('nav');
-  nav.className = 'sitenav print-hide';
+  nav.className = 'sitenav';
   nav.setAttribute('aria-label', 'Autres fiches');
   PAGES.forEach(function (page, i) {
     var el;
@@ -34,4 +34,15 @@
   });
   var mast = document.querySelector('header.mast');
   if (mast) mast.parentNode.insertBefore(nav, mast);
+
+  // back-to-top link, shown once the reader has scrolled past the masthead
+  var top = document.createElement('a');
+  top.className = 'totop';
+  top.href = '#';
+  top.textContent = '\u2191 haut';
+  top.setAttribute('aria-label', 'Revenir en haut de la page');
+  document.body.appendChild(top);
+  window.addEventListener('scroll', function () {
+    top.classList.toggle('show', window.scrollY > 400);
+  }, { passive: true });
 })();

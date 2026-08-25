@@ -6,7 +6,7 @@
   var footer = document.querySelector('footer');
   if (!footer) return;
   var form = document.createElement('form');
-  form.className = 'deepl print-hide';
+  form.className = 'deepl';
   form.innerHTML =
     '<span class="lvl">DeepL</span>' +
     '<select aria-label="Direction de traduction">' +

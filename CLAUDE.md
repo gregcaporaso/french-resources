@@ -11,7 +11,7 @@ Pages are reference sheets only — do not add exercises, drills, or answer keys
 Page content is in French with English glosses; `lang="fr"` on every page.
 Colour convention throughout: verb **radical** in ink, **terminaison** in red (the `.e` class / `--ending` CSS variable).
 Typography is intentional and is an exception to the global monospace-body default: serif (`--serif`) for headings, sans (`--sans`) for body text, mono (`--mono`) for accents only.
-Every page must be A4 print-friendly; print rules live in the shared stylesheet.
+Pages are screen-only (print support removed 2026-08-25): the site nav is sticky and `nav.js` injects a back-to-top link.
 Any list of French words (verbs, nouns, phrases…) shows an English translation beside each item, marked up with the `.en` class (requested 2026-07-22).
 Each topic lives on exactly one page; other pages link to it rather than repeating it (deduplicated by request on 2026-08-03).
 Owners: present of `parler`/`être`/`avoir` and the silent-endings note → `fondations-a1-a2.html`; the tense system and the « Dr & Mrs Vandertramp » list → `conjugaison-a2.html`; open-ended word lists → the vocab pages.

@@ -1,6 +1,6 @@
 # Ressources de français
 
-A small, growing collection of French reference sheets — plain static HTML, print-friendly (A4), meant to be served on GitHub Pages.
+A small, growing collection of French reference sheets — plain static HTML, meant to be served on GitHub Pages.
 
 ## Structure
 
@@ -10,7 +10,7 @@ french-resources/
 ├── fondations-a1-a2.html  # A1→A2 foundation: pronouns, present, negation, questions
 ├── conjugaison-a2.html    # A2 conjugation reference
 ├── styles/
-│   └── main.css           # shared styles + A4 print rules (edit once, applies everywhere)
+│   └── main.css           # shared styles (edit once, applies everywhere)
 ├── scripts/
 │   ├── deepl.js           # injects the DeepL launcher into each page footer (opens deepl.com prefilled)
 │   └── nav.js             # injects the cross-page nav at the top of each sheet
@@ -45,7 +45,3 @@ python3 -m http.server 8000
 5. Add a card to `index.html` — copy the commented `TEMPLATE` block already in that file and edit `href`, level, title, and description.
 6. Commit and push; Pages redeploys automatically.
 
-## Printing
-
-Every page carries an `@page { size: A4; margin: 16mm; }` rule and a print stylesheet.
-Just open a page and Ctrl/Cmd + P — the table of contents and any `.print-hide` elements drop out automatically.
