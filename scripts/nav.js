@@ -10,6 +10,7 @@
     ['noms-a2.html', 'Noms'],
     ['phrases-a2.html', 'Phrases'],
     ['cod-a2.html', 'COD'],
+    ['pronoms-a2.html', 'Pronoms'],
     ['gerondif-a2.html', 'Gérondif'],
     ['delf-a2-lacunes.html', 'Feuille de route']
   ];
