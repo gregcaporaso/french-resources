@@ -12,8 +12,9 @@ french-resources/
 ├── styles/
 │   └── main.css           # shared styles (edit once, applies everywhere)
 ├── scripts/
-│   ├── deepl.js           # injects the DeepL launcher into each page footer (opens deepl.com prefilled)
+│   ├── dico.js            # injects the FR/EN dictionary lookup into each page footer
 │   ├── nav.js             # injects the cross-page nav at the top of each sheet
+│   ├── recherche.js       # injects the site-wide search box on each page
 │   └── sommaire.js        # index only: builds the detailed index from each page's table of contents
 ├── .gitignore
 └── README.md
@@ -41,7 +42,7 @@ python3 -m http.server 8000
    ```
 
 2. Reuse the components already defined in `main.css`: `table.conj` (conjugation grids), `table.ref` (plain tables), `.note` / `.key` (callouts), `.grid` (responsive columns), `.e` (ending highlight).
-3. Copy the two `<script>` tags (`scripts/nav.js`, `scripts/deepl.js`) from the end of an existing page — they inject the cross-page nav and the footer DeepL launcher.
+3. Copy the three `<script>` tags (`scripts/nav.js`, `scripts/recherche.js`, `scripts/dico.js`) from the end of an existing page — they inject the cross-page nav, the search box, and the footer dictionary lookup.
 4. Add the page to the `PAGES` list in `scripts/nav.js` so it shows up in the nav.
 5. Add a card to `index.html` — copy the commented `TEMPLATE` block already in that file and edit `href`, level, title, and description.
 6. Commit and push; Pages redeploys automatically.

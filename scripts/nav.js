@@ -12,8 +12,11 @@
     ['cod-a2.html', 'COD'],
     ['pronoms-a2.html', 'Pronoms'],
     ['gerondif-a2.html', 'Gérondif'],
+    ['conditionnel-a2.html', 'Conditionnel'],
     ['delf-a2-lacunes.html', 'Feuille de route']
   ];
+  // shared with scripts/recherche.js so the search index covers every page
+  window.SITE_PAGES = PAGES;
   var here = location.pathname.split('/').pop() || 'index.html';
   var nav = document.createElement('nav');
   nav.className = 'sitenav';

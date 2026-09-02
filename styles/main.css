@@ -123,11 +123,33 @@ a.card:hover{border-color:var(--ink);transform:translateY(-2px)}
 .som-row a:hover{color:var(--ink);border-bottom-color:var(--ink)}
 .som-row a.som-page{flex-basis:100%;font-family:var(--serif);font-size:16.5px;font-weight:700;color:var(--ink);border-bottom:none}
 
-/* DeepL launcher (page footers) — opens deepl.com in a new tab with the text prefilled */
-.deepl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:#fff;border:1px solid var(--rule);border-radius:10px;padding:14px 16px;margin:18px 0 0}
-.deepl .lvl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--g1);padding:2px 8px;border-radius:20px}
-.deepl select,.deepl input,.deepl button{font-family:var(--sans);font-size:14px;padding:7px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink)}
-.deepl input{flex:1;min-width:160px}
-.deepl button{cursor:pointer;background:var(--ink);color:#fff;border-color:var(--ink)}
-.deepl button:hover{background:var(--g1);border-color:var(--g1)}
+/* Dictionnaire (page footers, injected by scripts/dico.js) — inline FR/EN lookup */
+.dico{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:#fff;border:1px solid var(--rule);border-radius:10px;padding:14px 16px;margin:18px 0 0}
+.dico .lvl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--g1);padding:2px 8px;border-radius:20px}
+.dico select,.dico input,.dico button{font-family:var(--sans);font-size:14px;padding:7px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink)}
+.dico input{flex:1;min-width:160px}
+.dico button{cursor:pointer;background:var(--ink);color:#fff;border-color:var(--ink)}
+.dico button:hover{background:var(--g1);border-color:var(--g1)}
+.dico .out{flex-basis:100%;border-top:1px solid var(--rule-soft);padding-top:10px;font-size:14px;color:var(--ink)}
+.dico .out p{margin:0 0 6px}
+.dico .out .alts{color:var(--ink-soft)}
+.dico .out .src{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);margin:2px 0 0}
+.dico .out .src a{color:var(--ink-soft)}
+
+/* Site search (injected by scripts/recherche.js) — in the sticky nav on the
+   sheets, below the masthead on the index */
+.recherche{position:relative}
+.recherche.in-nav{margin-left:auto}
+.recherche input{font-family:var(--sans);font-size:13px;padding:4px 10px;border:1px solid var(--rule);border-radius:20px;background:#fff;color:var(--ink);width:160px}
+.recherche input:focus{outline:none;border-color:var(--ink);width:220px}
+.recherche:not(.in-nav){margin:18px 0 0}
+.recherche:not(.in-nav) input{width:100%;max-width:340px;font-size:14px;padding:7px 14px}
+.recherche .res{position:absolute;right:0;top:calc(100% + 8px);z-index:30;width:min(480px,88vw);max-height:60vh;overflow:auto;background:#fff;border:1px solid var(--rule);border-radius:10px;box-shadow:0 8px 24px rgba(33,48,77,.12);padding:6px}
+.recherche:not(.in-nav) .res{right:auto;left:0}
+.recherche .res a{display:block;text-decoration:none;color:var(--ink);padding:9px 12px;border-radius:6px}
+.recherche .res a:hover{background:var(--rule-soft)}
+.recherche .res a b{display:block;font-family:var(--serif);font-size:14.5px;margin-bottom:2px}
+.recherche .res a span{display:block;font-size:12.5px;color:var(--ink-soft)}
+.recherche .res mark{background:var(--warn-bg);color:var(--ending);font-weight:700;padding:0 1px}
+.recherche .res .none{font-size:13px;color:var(--ink-soft);margin:6px 12px}
 
