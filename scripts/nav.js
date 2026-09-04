@@ -9,7 +9,7 @@
     ['verbes-a2.html', 'Verbes'],
     ['noms-a2.html', 'Noms'],
     ['phrases-a2.html', 'Phrases'],
-    ['cod-a2.html', 'COD'],
+    ['cod-a2.html', 'COD · COI'],
     ['pronoms-a2.html', 'Pronoms'],
     ['gerondif-a2.html', 'Gérondif'],
     ['conditionnel-a2.html', 'Conditionnel'],
