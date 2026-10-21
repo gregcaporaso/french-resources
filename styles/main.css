@@ -43,6 +43,8 @@ h1 .sub{display:block;font-style:italic;font-weight:400;font-size:clamp(15px,3.2
 /* ---- table of contents ---- */
 .toc{font-family:var(--mono);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 40px;color:var(--ink-soft)}
 .toc a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--ink-soft)}
+.toc-part{flex-basis:100%;display:flex;flex-wrap:wrap;gap:6px 18px} /* one row per group of sections */
+.toc-part b{min-width:5.5em;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.1em;font-size:11.5px;padding-top:1px}
 
 /* ---- site nav (injected by scripts/nav.js, above the masthead) ---- */
 .sitenav{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--rule);font-family:var(--mono);font-size:12.5px;display:flex;flex-wrap:wrap;gap:6px 16px;margin:-48px -28px 26px;padding:14px 28px;color:var(--ink-soft)}
@@ -56,6 +58,10 @@ h2{font-family:var(--serif);font-size:25px;margin:0 0 4px;font-weight:700;letter
 h2 .num{font-family:var(--mono);font-size:13px;color:var(--ink-soft);font-weight:400;letter-spacing:.1em}
 .lede{color:var(--ink-soft);margin:2px 0 18px;max-width:64ch}
 h3{font-family:var(--sans);font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin:26px 0 10px;font-weight:700}
+
+/* part heading grouping several sections (e.g. présent / passé / futur) */
+h2.part{font-size:15px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.18em;color:var(--ink-soft);font-weight:400;border-top:3px solid var(--ink);padding-top:12px;margin:8px 0 26px;scroll-margin-top:72px}
+h2.part .en{text-transform:none;letter-spacing:0}
 
 /* group band header */
 .gband{display:flex;align-items:baseline;gap:14px;border-top:3px solid;padding-top:14px;margin-top:8px}

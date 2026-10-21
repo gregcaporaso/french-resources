@@ -41,7 +41,7 @@ python3 -m http.server 8000
    <link rel="stylesheet" href="styles/main.css">
    ```
 
-2. Reuse the components already defined in `main.css`: `table.conj` (conjugation grids), `table.ref` (plain tables), `.note` / `.key` (callouts), `.grid` (responsive columns), `.e` (ending highlight).
+2. Reuse the components already defined in `main.css`: `table.conj` (conjugation grids), `table.ref` (plain tables), `.note` / `.key` (callouts), `.grid` (responsive columns), `.e` (ending highlight), `h2.part` + `.toc-part` (grouping sections into parts, as on `conjugaison-a2.html`).
 3. Copy the three `<script>` tags (`scripts/nav.js`, `scripts/recherche.js`, `scripts/dico.js`) from the end of an existing page — they inject the cross-page nav, the search box, and the footer dictionary lookup.
 4. Add the page to the `PAGES` list in `scripts/nav.js` so it shows up in the nav.
 5. Add a card to `index.html` — copy the commented `TEMPLATE` block already in that file and edit `href`, level, title, and description.

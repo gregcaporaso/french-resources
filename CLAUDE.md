@@ -20,7 +20,7 @@ The map table on `pronoms-a2.html` §1 is a deliberate exception to the one-topi
 ## Structure conventions
 
 All pages link the single shared stylesheet `styles/main.css` by relative path — style changes go there, not inline per page.
-Reusable components in `main.css`: `table.conj` (conjugation grids), `table.ref` (plain tables), `.note` / `.key` (callouts), `.grid` (responsive columns), `.e` (ending highlight).
+Reusable components in `main.css`: `table.conj` (conjugation grids), `table.ref` (plain tables), `.note` / `.key` (callouts), `.grid` (responsive columns), `.e` (ending highlight), `h2.part` + `.toc-part` (grouping sections into parts, as on `conjugaison-a2.html`).
 New resources: create the HTML page, add a card to `index.html` by copying the commented `TEMPLATE` block there, and add the page to the `PAGES` list in `scripts/nav.js`.
 Shared page furniture is injected by scripts (loaded before `</body>` on every sheet): `scripts/nav.js` adds the cross-page nav above the masthead (and exposes `window.SITE_PAGES`), `scripts/recherche.js` adds the site-search box (in the sticky nav; below the masthead on the index, where it lists pages from the cards instead), and `scripts/dico.js` adds the FR/EN dictionary lookup to the footer — the markup lives only in those scripts, not in the pages.
 `scripts/sommaire.js` (loaded by `index.html` only) builds the « Sommaire détaillé » section on the landing page by fetching every page linked from a card and reading its `nav.toc` — it needs no updating when pages change, but every sheet must keep an accurate `nav.toc` since the detailed index mirrors it.
