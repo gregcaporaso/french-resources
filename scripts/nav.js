@@ -13,6 +13,7 @@
     ['pronoms-a2.html', 'Pronoms'],
     ['gerondif-a2.html', 'Gérondif'],
     ['conditionnel-a2.html', 'Conditionnel'],
+    ['articles-a2.html', 'Articles'],
     ['delf-a2-lacunes.html', 'Feuille de route']
   ];
   // shared with scripts/recherche.js so the search index covers every page
