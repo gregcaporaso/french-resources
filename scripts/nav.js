@@ -14,6 +14,7 @@
     ['gerondif-a2.html', 'Gérondif'],
     ['conditionnel-a2.html', 'Conditionnel'],
     ['articles-a2.html', 'Articles'],
+    ['adjectifs-a2.html', 'Adjectifs'],
     ['delf-a2-lacunes.html', 'Feuille de route']
   ];
   // shared with scripts/recherche.js so the search index covers every page
