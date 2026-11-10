@@ -16,6 +16,7 @@ Any list of French words (verbs, nouns, phrases…) shows an English translation
 In tables the `.en` gloss stands bare beside the French; in running text (ledes, notes, paragraphs) it is wrapped in parentheses inside the span, `<em>avec</em> <span class="en">(with)</span>`, and a gloss already inside parentheses is introduced with `=`, `(<em>le dernier train</em> = <span class="en">the last train</span>)` (requested 2026-11-10).
 Each topic lives on exactly one page; other pages link to it rather than repeating it (deduplicated by request on 2026-08-03).
 Owners: present of `parler`/`être`/`avoir` and the silent-endings note → `fondations-a1-a2.html`; the tense system and the « Dr & Mrs Vandertramp » list → `conjugaison-a2.html`; the conditionnel (formation, politesse, conseil, souhait, hypothèse avec si) → `conditionnel-a2.html`; open-ended word lists → the vocab pages; the demonstratives (déterminants ce/cet/cette/ces and pronoms celui/celle…) and the all-pronoun-forms map → `pronoms-a2.html`.
+`delf-b1.html` is the roadmap: the DELF B1 format (from France Éducation International's current sample papers) and the syllabus as ✓ / ☐ rows; when a sheet or section covers a ☐ row, tick it and link the section in the same change (it replaced the A2 roadmap `delf-a2-lacunes.html` on 2026-11-10, by request).
 The map table on `pronoms-a2.html` §1 is a deliberate exception to the one-topic-one-page rule: it repeats pronoun *forms* for skimming but keeps all rules on the owner pages (added by request 2026-08-31).
 
 ## Structure conventions
