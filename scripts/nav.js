@@ -15,6 +15,7 @@
     ['conditionnel-a2.html', 'Conditionnel'],
     ['articles-a2.html', 'Articles'],
     ['adjectifs-a2.html', 'Adjectifs'],
+    ['accents-a2.html', 'Accents'],
     ['delf-b1.html', 'DELF B1']
   ];
   // shared with scripts/recherche.js so the search index covers every page
